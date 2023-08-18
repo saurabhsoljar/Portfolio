@@ -36,6 +36,39 @@ button.btn:hover{
     border: 1px solid var(--primary-clr);
 }
 
+/* =====Serivices Section Style Start===== */
+.reusable{
+    width: 100%;
+    padding: 70px 8% 50px;
+}
+
+.reusable .headings{
+    max-width: 700px;
+    margin: 0px auto 25px;
+    text-align: center;
+}
+
+.reusable .headings h3{
+    font-size: 17px;
+    color: var(--links-clr);
+}
+
+.reusable .headings h1{
+    position: relative;
+    font-size: 32px;
+    margin: 10px 0px 15px;
+    color: var(--primary-clr);
+}
+
+.reusable .headings p{
+    font-size: 15px;
+    color: var(--text-clr);
+}
+
+/* =====Serivices Section Style Ends===== */
+
+
+
 /* Reusable Code ends */
 
 body{
@@ -398,7 +431,11 @@ button.contact-btn{
 }
 /* -------------------About Section Styling End-----------------------*/
 
+/* ***** Services Section Styling Starts ***** */
 
+
+
+/* ***** Services Section Styling Ends ***** */
 
 
 /* -----------------------------Media   Query Start------------------------ */
