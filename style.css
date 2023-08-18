@@ -80,7 +80,7 @@ body{
 .home .active .vanbar{
     top: 0;
     position: fixed;
-    max-width: 70px;
+    max-height: 70px;
     height: 10vh;
     background-color: var(--bg-clr-one);
     box-shadow: 0px 2px 5px 0px  rgba(0, 0, 0, 0.15);
@@ -293,6 +293,114 @@ button.contact-btn{
 /* -------------------Home Section styleing Ends-----------------------*/
 
 
+
+/* -------------------About Section Styling start-----------------------*/
+
+.about{
+    padding: 90px 8% 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .about-image{
+    position: relative;
+    flex-direction: 30%;
+    height: 400px;
+    max-height: 450px;
+    background-color: var(--primary-light-clr);
+}
+
+.about .about-desc{
+    flex-basis: 65%;
+    margin: 3%;
+}
+
+.about .about-image::before{
+    position: absolute;
+    content: '';
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    outline: 3px solid var(--primary-clr);
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+}
+
+.about .about-image img{
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.about .about-image .social-media{
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 10px);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: var(--primary-clr);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.about .about-image .social-media i{
+    color: var(--bg-clr-one);
+    margin: 8px 0px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.about .about-image .social-media i:hover{
+    transform: scale(1.2);
+}
+
+.about .about-desc h3{
+    font-size: 17px;
+    color: var(--links-clr);
+}
+
+.about .about-desc h2{
+    margin: 10px 0px;
+    font-size: 22px;
+    color: var(--primary-clr);
+}
+
+.about .about-desc p{
+    font-size: 15px;
+    color: var(--text-clr);
+}
+
+.about-desc .about-presonal-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary-clr);
+}
+
+.about-presonal-info div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-presonal-info div span{
+    color: var(--primary-clr);
+    letter-spacing: 1px;
+}
+
+.about-desc .download-btn{
+    border-radius: 25px;
+    margin-top: 25px;
+}
+/* -------------------About Section Styling End-----------------------*/
+
+
+
+
 /* -----------------------------Media   Query Start------------------------ */
 
 /* ===== Screen Size 1100px or Smaller ===== */
@@ -367,6 +475,8 @@ button.contact-btn{
 		margin-top: 20px;
 	}
 	.about-desc .about-personal-info{
+        display: flex;
+        flex-direction: column;
 		grid-template-columns: 1fr;
 		grid-gap: 10px 20px;
 		margin-top: 14px;
@@ -413,6 +523,31 @@ button.contact-btn{
 	.column-2 .form-2 .inputGroup{
 		border: 1px solid #ddd;
 	}
+
+    About Section
+    .about{
+        flex-direction: column;
+    }
+    .about .About-desc{
+        flex-basis: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .About-desc .about-personal-info{
+        grid-template-columns: 1fr;
+        grid-gap: 10px 20px;
+        margin-top: 14px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--primary-light-clr);
+    }
+    .about .about-image{
+        flex-basis: 100%;
+        min-height: 300px;
+    }
+    .about .about-image img{
+        min-width: 250px;
+        min-height: 300px;
+    }
 }
 
 
