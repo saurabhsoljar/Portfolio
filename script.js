@@ -51,10 +51,30 @@ $('.button-group .button').on('click',function(){
 })
 
 //magnific popup
-$('.gallery').magnificPupop({
-    delgate:'.overlay a',
-    type:'image',
-    gallery:{
-        enableed:true
+$('.gallery').magnificPopup({
+    delegate: '.overlay a',
+    type: 'image',
+    gallery: {
+        enabled: true
+    }
+});
+
+//portfolio Section Ends
+
+//Testimonial Section Starts
+$('.testimonials-container').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
     }
 })
