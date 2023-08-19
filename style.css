@@ -738,6 +738,11 @@ button.contact-btn{
     .services-container .service-box{
         flex-basis: 48%;
     }
+
+    /* portfolio Section */
+    .portfolio .gallery .item{
+        width: calc(100% /2);
+    }
 }
 
 
@@ -899,8 +904,12 @@ button.contact-btn{
 
 /* ===== Screen Size 600px or Smaller===== */
 @media(max-width: 600px){
-
+     /* portfolio Section */
+    .portfolio .gallery .item{
+        width:  100%;
+    }
 }
+
 
 /* ===== Screen Size 550px or Smaller===== */
 @media(max-width: 550px){
