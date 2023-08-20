@@ -725,6 +725,133 @@ button.contact-btn{
 
 /* ***** portfolio Section Styleing Ends ***** */
 
+/* ***** Testimonials  Section Styleing starts ***** */
+
+.testimonials{
+    background-color: var(--bg-clr-one);
+}
+
+.testimonials-container{
+    position: relative;
+}
+
+.testimonials-container .testimonial-card{
+    padding: 20px;
+}
+
+.testimonial-card .profile{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.profile .profile-image{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.profile .profile-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-card .test-card-body{
+    background-color: var(--primary-light-clr);
+    padding: 20px;
+}
+
+.test-card-body .quote{
+    display: flex;
+    align-items: center;
+}
+
+.test-card-body .quote i{
+    font-size: 45px;
+    color: var(--primary-clr);
+    margin-right: 20px;
+}
+
+.test-card-body .quote h2{
+    color: var(--primary-clr);
+}
+
+.test-card-body p{
+    margin: 10px 0px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-clr);
+}
+
+.test-card-body .ratings{
+    margin-top: 20px;
+}
+
+.test-card-body .ratings i{
+    font-size: 17px;
+    color: #05555c;
+    cursor: pointer;
+}
+
+.profile .profile-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-desc span:nth-child(1){
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-clr);
+}
+
+.profile-desc span:nth-child(2){
+    font-size: 15px;
+    counter-reset: var(--text-clr);
+}
+
+.testimonials .owl-nav{
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+}
+
+.testimonials .owl-nav button{
+    border-radius: 50% !important;
+}
+
+.testimonials .owl-nav .owl-prev i,
+.testimonials .owl-nav .owl-next i{
+    padding: 10px !important;
+    border-radius: 50%;
+    font-size: 18px !important;
+    background-color: var(--primary-light-clr) !important;
+    color: var(--primary-clr);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.testimonials .owl-nav .owl-prev i:hover,
+.testimonials .owl-nav .owl-next i:hover{
+    background-color: var(--primary-clr) !important;
+    color: var(--bg-clr-one);
+}
+
+.testimonials .owl-dots{
+    margin-top: 15px;
+}
+
+.testimonials .owl-dots .owl-dot span{
+    padding: 6px !important;
+}
+
+.testimonials .owl-dots .owl-dot span .active span{
+    background-color: var(--primary-clr) !important;
+}
+/* ***** Testimonials  Section Styleing starts ***** */
 
 /* -----------------------------Media   Query Start------------------------ */
 
