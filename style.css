@@ -6,6 +6,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     /*-----------------Storing Colour In Variable --------------------*/
     --bg-clr-one: #f6f9fe;
     --bg-clr-two: #f4f7fc;
@@ -14,7 +15,7 @@ html{
     --primary-light-clr: #eaf3fa;
     --links-clr: #186f78;
     --text-clr:#3f7277;
-    --secondary-heading: #277b6d:
+    --secondary-heading: #277b6d;
 }
 
 /* Reusable Code Starts */

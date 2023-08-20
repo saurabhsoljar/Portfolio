@@ -23,6 +23,10 @@ function menuItemClick(){
     menu.classList.remove('active');
 }
 
+var homeSection = document.querySelector('.home');
+window.addEventListener('scroll',scrollFunction);
+window.addEventListener('load',scrollFunction);
+
 function scrollFunction(){
     if(window.scrollY > 60){
         homeSection.classList.add('active');
