@@ -262,6 +262,8 @@ button.contact-btn{
 }
 
 .hero .hero-image img{
+    width: 447px;
+    height: 559px;
     position: absolute;
     width: auto;
     height: auto;
@@ -270,6 +272,7 @@ button.contact-btn{
     left: 20px;
     bottom: 0px;
 }
+
 
 .home .career-container{
 	position: relative;
