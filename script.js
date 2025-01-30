@@ -37,6 +37,45 @@ function scrollFunction(){
 }
 //Home Section Ends
 
+//Hire Me Button 
+
+const hireBtn = document.getElementById('hireBtn');
+const contactOptions = document.getElementById('contactOptions');
+
+hireBtn.addEventListener('click', function(e) {
+    contactOptions.style.display = contactOptions.style.display === 'block' ? 'none' : 'block';
+    e.stopPropagation();
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function() {
+    contactOptions.style.display = 'none';
+});
+
+// Prevent dropdown from closing when clicking inside it
+contactOptions.addEventListener('click', function(e) {
+    e.stopPropagation();
+});
+
+//Hire Me Button end
+
+//About section to downlode cv start
+
+document.getElementById('downloadBtn').addEventListener('click', function() {
+    // Your Google Drive resume URL
+    const resumeUrl = 'https://drive.google.com/file/d/1lKvx_f6-5TRpOVpNM_3MgBavpsJ43iiR/view?usp=sharing';
+    
+    // Open in new window with security features
+    window.open(
+        resumeUrl,
+        '_blank',
+        'noopener,noreferrer'
+    );
+});
+
+//About section to downlode cv start
+
+
 //portfilio Section Strats
 var $galleryContainer = $('.gallery').isotope({
     itemSelector:'.item',
@@ -90,4 +129,19 @@ $('.testimonials-container').owlCarousel({
         }
     }
 })
+
+// My Work Showcase (addEventListener) for open new window project start
+
+document.querySelectorAll('.overlay a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.open(link.href, '_blank', 'noopener,noreferrer');
+    });
+  });
+
+
+// My Work Showcase (addEventListener) for open new window project end
+
+
+
 
