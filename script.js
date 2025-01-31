@@ -113,35 +113,42 @@ document.getElementById("smsContact").addEventListener("click", function () {
   }
 });
 
-// Form Submission Handler to contact section
-document
-  .getElementById("mainContactForm")
-  .addEventListener("submit", async (e) => {
-    e.preventDefault();
+document.getElementById("mainContactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-    const formData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
-    try {
-      // Replace with actual form submission endpoint
-      const response = await fetch("https://your-api-endpoint.com/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+  // Form validation
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) {
+      alert("Please fill in all fields");
+      return;
+  }
+
+  try {
+      // Use a free form handling service (replace with your own endpoint)
+      const response = await fetch("https://formspree.io/f/mzzdgeal", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+              name: name,
+              email: email,
+              message: message
+          })
       });
 
       if (response.ok) {
-        alert("Message sent successfully!");
-        document.getElementById("mainContactForm").reset();
+          alert("Message sent successfully!");
+          document.getElementById("mainContactForm").reset();
       } else {
-        throw new Error("Failed to send message");
+          const errorData = await response.json();
+          throw new Error(errorData.error || "Failed to send message");
       }
-    } catch (error) {
+  } catch (error) {
       console.error("Error:", error);
-      alert("There was an error sending your message. Please try again.");
-    }
-  });
+      alert(`Error: ${error.message}`);
+  }
+});
