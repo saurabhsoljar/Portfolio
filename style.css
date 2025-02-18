@@ -1725,3 +1725,137 @@ button.contact-btn {
     margin: 10px 0;
   }
 }
+
+@media screen and (max-width: 375px) {
+  /* Navbar */
+  .navbar {
+      flex-direction: column;
+      padding: 15px 0;
+  }
+  
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+  }
+
+  /* Hero Section */
+  .hero {
+      flex-direction: column;
+      padding: 20px 0;
+  }
+
+  .hero-text {
+      text-align: center;
+      padding: 0 15px;
+  }
+
+  .hero-text h1 {
+      font-size: 2rem;
+  }
+
+  .hero-image {
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  /* Career Container */
+  .career-container {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  /* About Section */
+  .about {
+      flex-direction: column;
+      padding: 30px 15px;
+  }
+
+  .about-image {
+      width: 100%;
+  }
+
+  .about-desc {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 25px;
+  }
+
+  /* Services */
+  .services-container {
+      grid-template-columns: 1fr;
+  }
+
+  /* Resume */
+  .resume-row {
+      flex-direction: column;
+  }
+
+  .column {
+      width: 100%;
+  }
+
+  /* Portfolio */
+  .gallery {
+      grid-template-columns: 1fr;
+  }
+
+  .button-group {
+      flex-wrap: wrap;
+      gap: 8px;
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+      width: 100%;
+      margin: 0 10px;
+  }
+
+  /* Contact Section */
+  .contact-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .contact-info {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+  .contact-form {
+      width: 100%;
+  }
+
+  /* Footer */
+  .footer-contents {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+  }
+
+  /* General Adjustments */
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  h2 {
+      font-size: 1.4rem;
+  }
+
+  h3 {
+      font-size: 1.2rem;
+  }
+
+  .btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+
+  .headings h1 {
+      font-size: 1.6rem;
+  }
+
+  .headings p {
+      font-size: 0.9rem;
+  }
+}

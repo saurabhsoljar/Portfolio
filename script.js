@@ -152,3 +152,4 @@ document.getElementById("mainContactForm").addEventListener("submit", async (e) 
       alert(`Error: ${error.message}`);
   }
 });
+
